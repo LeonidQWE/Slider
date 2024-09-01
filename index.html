@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="layout">
+    <div class="menu">
+      <div class="title">
+          <div class="title__line"></div>
+          <h2 class="title__text">Категории</h2>
+          <div class="title__line"></div>
+      </div>
+
+      <div class="menu__carousel">
+          <button class="btn" id="menuCarouselControlPrevItem" value="prevItem">
+              <img src="./images/prevControl.svg" alt="swipe the menu icon to the left" class="menu__carousel-control">
+          </button>
+
+          <div class="menu__carousel-wrapper" id="menuCategories">
+              <div class="menu__categories" id="menuCategoriesLine">
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="salads">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#saladsIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Салаты</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="signatureRolls">
+                          <svg aria-hidden="true" class="category__item">
+                              <use xlink:href="./images/menuIcons.svg#signatureRollsIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Роллы от шефа</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="breakfast">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#breakfastIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Завтраки</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="desserts">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#dessetrsIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Десерты</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="futomaki">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#futomakiIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Футомаки</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="hotStarters">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#hotStartersIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Горячие закуски</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="onigiri">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#onigiriIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Онигири</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="extras">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#extrasIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Дополнительно</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="gunkan">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#gunkanIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Гункан</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="tataki">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#tatakiIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Татаки и тартар</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="sets">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#setsIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Сеты</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="soup">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#soupIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Супы</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="uramaki">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#uramakiIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Урамаки</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="drinks">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#drinksIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Напитки</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="nigiri">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#nigiriIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Нигири</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="lunch">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#lunchIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Суши Ланч</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="coldStarters">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#coldStartersIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Холодные закуски</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="hosomaki">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#hosomakiIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Хосомаки</span>
+                      </button>
+                  </div>
+
+                  <div class="menu__item">
+                      <button class="btn menu__category" value="sashimi">
+                          <svg aria-hidden="true" class="category__item">
+                              <use href="./images/menuIcons.svg#sashimiIcon" class="category__icon"></use>
+                          </svg>
+                          <span class="category__name">Сашими</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          <button class="btn btn__carousel-control" id="menuCarouselControlNextItem" value="nextItem">
+              <img src="./images/nextControl.svg" alt="scrolling the menu icon to the right" class="menu__carousel-control">
+          </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
